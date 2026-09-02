@@ -140,4 +140,12 @@ DOMEventStream Objects
                   # Following statement prints node with all its children '<p>Some text <div>and more</div></p>'
                   print(node.toxml())
 
-   .. method:: DOMEventStream.reset()
+   .. method:: reset()
+
+      Create a new DOM builder and attach it to the parser. Buffered
+      events are discarded; the underlying stream is not rewound.
+
+   .. method:: clear()
+
+      Release references to the parser, the stream and the DOM builder.
+      The event stream cannot be used after calling this method.

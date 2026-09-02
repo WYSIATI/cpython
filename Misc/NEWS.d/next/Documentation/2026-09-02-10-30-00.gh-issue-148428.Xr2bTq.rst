@@ -1,0 +1,2 @@
+Document the :meth:`!clear` and :meth:`!reset` methods of
+:class:`xml.dom.pulldom.DOMEventStream`.
